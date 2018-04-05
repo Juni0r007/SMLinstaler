@@ -1,20 +1,20 @@
 #!bash/bin
 #Script instalador de SMLoadr
 #Created by Juni0r2019
-echo "Actualizando Paquetes...\n"
+echo "Actualizando Paquetes..."
 pkg update
 pkg upgrade
-echo "Instalanto Node.js y Git...\n"
+echo "Instalanto Node.js y Git..."
 apt-get -y install nodejs git coreutils
-echo "Clonando SMLoadr...\n"
+echo "Clonando SMLoadr..."
 git clone https://git.teknik.io/SMLoadrDev/SMLoadr.git
-echo "Configurando instalacion...\n"
+echo "Configurando instalacion..."
 mv SMLoadr/{package.json,SMLoadr.js} $HOME
 rm -Rf SMLoadr
 npm install
 sed -i 's/linux/android/' node_modules/openurl/openurl.js
 mkdir ~/storage/shared/SMLoadr
 ln -s ~/storage/shared/SMLoadr DOWNLOADS
-echo "Para iniciar poner node SMLoadr.js en la terminal\n"
-echo "La capeta de musica estara en la memoria interna -> SMLoadr, separada por artista y album\n"
+echo "Para iniciar poner node SMLoadr.js en la terminal"
+echo "La capeta de musica estara en la memoria interna -> SMLoadr, separada por artista y album"
 
