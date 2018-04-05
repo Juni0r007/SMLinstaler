@@ -5,7 +5,7 @@ echo "Actualizando Paquetes...\n"
 pkg update
 pkg upgrade
 echo "Instalanto Node.js y Git...\n"
-pkg install nodejs git
+apt-get -y install nodejs git coreutils
 echo "Clonando SMLoadr...\n"
 git clone https://git.teknik.io/SMLoadrDev/SMLoadr.git
 echo "Configurando instalacion...\n"
