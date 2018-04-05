@@ -1,4 +1,4 @@
 # SMLinstaler
 Instalador de SMLoadr para termux
 
-Ejecucion sh smlinstaller.sh
+Ejecución: sh smlinstaller.sh
