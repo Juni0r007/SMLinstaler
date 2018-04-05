@@ -12,7 +12,7 @@ echo "Configurando instalacion...\n"
 mv SMLoadr/{package.json,SMLoadr.js} ./
 rm -Rf SMLoadr
 npm install
-sed -i s/linux/android/ node_modules/openurl/openurl.js
+sed -i 's/linux/android/' node_modules/openurl/openurl.js
 mkdir ~/storage/shared/SMLoadr
 ln -s ~/storage/shared/SMLoadr DOWNLOADS
 echo "Para iniciar poner node SMLoadr.js en la terminal\n"
