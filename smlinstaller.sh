@@ -1,6 +1,6 @@
 #!bash/bin
 #Script instalador de SMLoadr
-#Created for Juni0r2019
+#Created by Juni0r2019
 echo "Actualizando Paquetes...\n"
 pkg update
 pkg upgrade
