@@ -16,5 +16,5 @@ sed -i 's/linux/android/' node_modules/openurl/openurl.js
 mkdir ~/storage/shared/SMLoadr
 ln -s ~/storage/shared/SMLoadr DOWNLOADS
 echo "Para iniciar poner node SMLoadr.js en la terminal\n"
-echo "La capeta de musica estara en la memoria interna -> SMLoadr, separada por artista y album"
+echo "La capeta de musica estara en la memoria interna -> SMLoadr, separada por artista y album\n"
 
