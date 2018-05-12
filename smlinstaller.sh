@@ -9,6 +9,7 @@ apt-get -y install nodejs git coreutils
 echo "Clonando SMLoadr..."
 git clone https://git.teknik.io/SMLoadrDev/SMLoadr.git
 echo "Configurando instalacion..."
+termux-setup-storage
 cd SMLoadr
 npm install
 sed -i 's/linux/android/' node_modules/openurl/openurl.js
